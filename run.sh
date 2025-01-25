@@ -8,7 +8,7 @@ XAUTH=/tmp/.docker.xauth
 touch $XAUTH
 xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
 
-IMAGE_NAME=ros-noetic-synkar:latest
+IMAGE_NAME=ros-noetic-turtlebot3:latest
 
 # Prompt for the host folder to mount in the container
 # echo "Enter the full path of the folder to mount in the container:"
@@ -21,7 +21,7 @@ CONTAINER_FOLDER_PATH="/root/shared_folder/"
 # Run the Docker container with the selected image and configurations for GUI applications
 docker run -it \
   --rm \
-  --name=synkar5_turtlebot3 \
+  --name=turtlebot3_container \
   --user=root \
   --privileged \
   --network=host \

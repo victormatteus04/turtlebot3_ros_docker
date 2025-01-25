@@ -84,7 +84,7 @@ Visit the [official Docker documentation](https://docs.docker.com/get-docker/).
 
 2. Build the Docker image:
    ```bash
-   docker build -t ros-noetic-synkar:latest .
+   docker build -t ros-noetic-turtlebot3:latest .
    ```
 
 ---
